@@ -1,0 +1,35 @@
+@mixin defaultShowAnimation {
+  -webkit-animation: showElement alternate .5s;
+  -o-animation: showElement alternate .5s;
+  animation: showElement alternate .5s;
+}
+
+@mixin desktop() {
+  @media (max-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin laptop() {
+  @media (max-width: $laptop) {
+    @content;
+  }
+}
+
+@mixin tablet() {
+  @media (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin mobile-big() {
+  @media (max-width: $mobile-big) {
+    @content;
+  }
+}
+
+@mixin mobile-small() {
+  @media (max-width: $mobile-small) {
+    @content;
+  }
+}
